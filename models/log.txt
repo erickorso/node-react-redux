@@ -1,0 +1,13 @@
+{"type":"cash","category":"extraction","import":"999","service":null,"countToTransfer":null,"newPassword":null,"date":"2020-03-20T17:46:52.914Z"}
+{"type":"cash","category":"change-paswords","import":null,"service":null,"countToTransfer":null,"newPassword":"456789","date":"2020-03-20T19:58:03.837Z"}
+{"type":"credit","category":"extraction","import":"10000","service":null,"countToTransfer":null,"newPassword":null,"date":"2020-03-20T20:01:10.289Z"}
+{"type":"cash","category":"change-paswords","import":null,"service":null,"countToTransfer":null,"newPassword":"98698","date":"2020-03-20T20:08:28.247Z"}
+{"type":"cash","category":"extraction","import":"20000","service":null,"countToTransfer":null,"newPassword":null,"date":"2020-03-20T20:10:10.972Z"}
+{"type":"credit","category":"service-payments","import":"245","service":"metro-gas","countToTransfer":null,"newPassword":null,"date":"2020-03-20T20:10:37.094Z"}
+{"type":"cash","category":"transfers","import":"3456","service":null,"countToTransfer":"23456789999786","newPassword":null,"date":"2020-03-20T20:12:53.604Z"}
+{"type":"cash","category":"extraction","import":null,"service":null,"countToTransfer":null,"newPassword":null,"date":"2020-03-20T20:34:31.530Z"}
+{"type":"cash","category":"extraction","import":"1234","service":null,"countToTransfer":null,"newPassword":null,"date":"2020-03-20T20:48:44.835Z"}
+{"type":"cash","category":"transfers","import":"10000","service":null,"countToTransfer":"98367768985","newPassword":null,"date":"2020-03-20T21:01:24.886Z"}
+{"type":"cash","category":"change-paswords","import":"133","service":"metro-gas","countToTransfer":"98367768985","newPassword":null,"date":"2020-03-20T21:17:30.993Z"}
+{"type":"cash","category":"extraction","import":"1232222","service":null,"countToTransfer":null,"newPassword":null,"date":"2020-03-20T21:23:52.636Z"}
+{"type":"credit","category":"extraction","import":"233","service":null,"countToTransfer":null,"newPassword":null,"date":"2020-03-20T21:26:37.690Z"}

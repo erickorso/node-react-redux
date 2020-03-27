@@ -1,0 +1,13 @@
+.player-selected{
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    height: 100%;
+
+    .players-titular{
+        flex: 2;
+    }
+    .players-scrub{
+        width: 300px;
+    }
+}

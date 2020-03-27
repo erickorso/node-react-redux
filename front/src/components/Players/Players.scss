@@ -1,0 +1,15 @@
+.players{
+    border: solid 1px #444;
+    padding: 5px;
+    min-height: 24vh;
+    overflow-y: scroll;
+    height: 100%;
+    h2{
+        font-size: 14px;
+    }
+
+    &-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

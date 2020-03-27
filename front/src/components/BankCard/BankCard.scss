@@ -1,0 +1,10 @@
+.bank-card{
+    &.active{
+        border: solid 3px #aaf;
+        background: #eee;
+    }
+
+    .MuiCardContent-root{
+        padding: 5px;
+    }
+}

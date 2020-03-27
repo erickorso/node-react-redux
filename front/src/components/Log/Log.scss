@@ -1,0 +1,27 @@
+.bank-transactions{
+    width: 90%;
+    margin: 20px 5%;
+    height: 90vh;
+    
+    .bank-transactions-list{
+        overflow-y: scroll;
+        max-height: 75vh;
+
+        .expansion-header{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: white;
+            &.cash{
+                background-color: #cfc;
+            }
+            &.credit{
+                background-color: #fcc;
+            }
+            h3{
+                color: #77f;
+                margin-right: 20px;
+            }
+        }
+    }
+}

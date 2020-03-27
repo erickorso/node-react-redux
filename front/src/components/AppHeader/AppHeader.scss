@@ -1,0 +1,24 @@
+.app-header{
+    background-color: #333;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        color: #f60;
+        flex: 3;
+    }
+
+    h2{
+        flex: 1;
+        font-size: 12px;
+        text-align: center;
+        background: white;
+        border-radius: 5px;
+        padding: 3px;
+        color: #f60;
+    }
+}

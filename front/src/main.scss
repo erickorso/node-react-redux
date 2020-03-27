@@ -1,0 +1,56 @@
+body{
+    background: #ccc;
+    font-family: 'Roboto', sans-serif;
+    
+    h1, h2, h3, p{
+        color: #eee;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .main-app{
+        background: black;
+        padding: 20px;
+        border-radius: 10px;
+        height: 92vh;
+
+        .players-wrapper{
+            border: solid 1px #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-content: stretch;
+        }
+
+        .players-availables{
+            width: 440px;
+            height: 75vh;
+        }
+
+        .players-selected{
+            flex: 1;
+            height: 75vh;
+        }
+    }
+
+    .btn-app{
+        border: solid #f50 2px;
+        border-radius: 5px;
+        background: white;
+        color: #f60;
+        text-align: center;
+        padding: 5px;
+        font-size: 12px;
+        transition: ease-in-out all .7s;
+        cursor: pointer;
+
+        &:hover{
+            border: solid #f60 2px;
+            border-radius: 5px;
+            background: black;
+            color: #f60;
+        }
+    }
+
+}

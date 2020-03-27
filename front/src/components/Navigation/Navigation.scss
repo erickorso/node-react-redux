@@ -1,0 +1,27 @@
+.main-navigation{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    >ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        li{
+            width: 100px;
+            
+            a{
+                text-decoration: none;
+                padding: 5px 10px;
+                margin-left: 5px;
+                border: solid #f60;
+                color: #f60;
+                background: black;
+                border-radius: 3px;
+            }
+        }
+    }
+}

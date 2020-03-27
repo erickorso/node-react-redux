@@ -1,0 +1,39 @@
+.main-bank{
+    margin: 20px 5%;
+
+    .bank-stepper{
+        height: 75vh;
+        display: flex;
+        justify-content: space-between;
+        align-content: stretch;
+        border: solid #999 2px;
+        padding: 10px;
+        border-radius: 5px;
+
+        .bank-step{
+            margin: 5px;
+            flex: 1;
+
+            &.step-two, &.step-tree{
+                flex: 2;
+
+                .operation-form{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    h1{
+        color: black;
+    }
+
+    >ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

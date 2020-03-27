@@ -1,0 +1,34 @@
+.user-card{
+    border: solid #f60;
+    border-radius: 3px;
+    width: 200px;
+    margin: 2px 5px;
+    background: black;
+
+    &__img{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50px;
+        color: #f60;
+        padding: 5px;
+    }
+
+    h3, h2{
+        text-align: center;
+        font-size: 12px;
+        color: #f60;
+    }
+
+    &__actions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+
+        .btn-app{
+            flex: 1;
+        }
+    }
+}
