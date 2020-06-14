@@ -12,24 +12,19 @@ class UserModel {
   DELETE_USER_QUERY = `DELETE FROM user WHERE  id = ?`;
 
   allUsers = (req, res) => {
-    // const users = new Promise((resolve, reject) => {
+    const users = new Promise((resolve, reject) => {
       Connection.query(this.ALL_USERS_QUERY, (err, results) => {
         if (err) {
-          return res.json(err);
+          reject(err);
         } else {
-          return res.json(results);
+          resolve(results);
         }
       });
-    // });
+    });
 
-    // return users
-    //   .then(result => {
-    //     return res.json(result);
-    //   })
-    //   .catch(err => {
-    //     console.log({ err });
-    //     res.send({ error: err });
-    //   });
+    return users
+      .then((result) => res.json(result))
+      .catch((err) => res.send({ error: err }));
   };
 
   getUserById = (req, res) => {
@@ -47,18 +42,15 @@ class UserModel {
       );
     });
 
-    return user.then(result => {
-      return res
-        .json({
+    return user
+      .then((result) =>
+        res.json({
           data: result,
           msg: `showing user ${req.params.id}`,
-          query: this.GET_USER_BY_ID_QUERY
+          query: this.GET_USER_BY_ID_QUERY,
         })
-        .catch(err => {
-          console.log({ err });
-          res.send({ error: err });
-        });
-    });
+      )
+      .catch((err) => res.send({ error: err }));
   };
 
   insertUser = (req, res) => {
@@ -71,18 +63,15 @@ class UserModel {
         }
       });
     });
-    return user.then(result => {
-      return res
-        .json({
+    return user
+      .then((result) =>
+        res.json({
           data: result,
           body: req.body,
-          query: this.INSERT_USER_QUERY
+          query: this.INSERT_USER_QUERY,
         })
-        .catch(err => {
-          console.log({ err });
-          res.send({ error: err });
-        });
-    });
+      )
+      .catch((err) => res.send({ error: err }));
   };
 
   editUser = (req, res) => {
@@ -99,18 +88,15 @@ class UserModel {
         }
       );
     });
-    return user.then(result => {
-      return res
-        .json({
+    return user
+      .then((result) =>
+        res.json({
           data: result,
           body: req.body,
-          query: this.UPDATE_USER_QUERY
+          query: this.UPDATE_USER_QUERY,
         })
-        .catch(err => {
-          console.log({ err });
-          res.send({ error: err });
-        });
-    });
+      )
+      .catch((err) => res.send({ error: err }));
   };
 
   removeUser = (req, res) => {
@@ -127,18 +113,15 @@ class UserModel {
         }
       );
     });
-    return user.then(result => {
-      return res
-        .json({
+    return user
+      .then((result) =>
+        res.json({
           data: result,
           body: req.body,
-          query: this.DELETE_USER_QUERY
+          query: this.DELETE_USER_QUERY,
         })
-        .catch(err => {
-          console.log({ err });
-          res.send({ error: err });
-        });
-    });
+      )
+      .catch((err) => res.send({ error: err }));
   };
 }
 

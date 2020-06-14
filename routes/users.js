@@ -5,6 +5,8 @@ const UserController = require("../controllers/UserController");
 /* GET users listing. */
 router.get('/', (req, res)  => UserController.getUsers(req, res))
 
+router.get('/service', (req, res)  => UserController.getUsersService(req, res))
+
 router.post("/", (req, res) => UserController.newUser(req, res));
 
 router.get("/:id", (req, res) => UserController.getUser(req, res));

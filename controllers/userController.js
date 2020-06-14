@@ -2,11 +2,16 @@
 ** user controller
 */ 
 const UserModel = require("../models/UserModel");
+const UserService = require("../services/UserService");
 
 class UserController {
 
   getUsers = (req, res) => {
     return UserModel.allUsers(req, res);
+  };
+
+  getUsersService = (req, res) => {
+    return UserService.allUsers(req, res);
   };
 
   getUser = (req, res) => {
