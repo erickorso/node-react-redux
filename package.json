@@ -7,8 +7,8 @@
     "node": "13.6.0"
   },
   "scripts": {
-    "start": "babel-node ./bin/www",
-    "server": "babel-node ./bin/www",
+    "start": "node ./bin/www",
+    "server": "node ./bin/www",
     "client": "npm start --prefix front",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
